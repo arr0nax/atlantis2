@@ -1,7 +1,4 @@
 {{yield}}
-<div class="displayArticle">
-  {{#link-to 'article' article.id}}<h3>{{article.title}}</h3>{{/link-to}}
-  <h4>{{article.author}}</h4>
-  <div id="{{article.id}}" class="displayBody">
-  </div>
+<div class="col-md-12 displayArticle">
+  {{#link-to 'article' article.id}}<h3>{{article.seed}}</h3>{{/link-to}}
 </div>

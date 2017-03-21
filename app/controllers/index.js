@@ -27,6 +27,16 @@ export default Ember.Controller.extend({
                 newPost.save();
                 console.log(newPost);
                 console.log(randomword);
+                $.get("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=e4d50be66420e011afd6d560e5d7746e&tags="+randomword+"&per_page=1&format=json", function(response){
+                  console.log(response);
+                  var flickr = response.slice(14, -1);
+                  flickr = JSON.parse(flickr);
+                  console.log(flickr.photos);
+                  console.log(flickr.photos.photo[0]);
+                  var flickrurl = 'https://farm'+flickr.photos.photo[0].farm+'.staticflickr.com/'+flickr.photos.photo[0].server+'/'+flickr.photos.photo[0].id+'_'+flickr.photos.photo[0].secret+'.jpg';
+                  $('body').css('background-image', "url("+flickrurl+")");
+                  // $('.jumbotron').css('background-color','red');
+                });
               });
             });
           }
