@@ -1,8 +1,5 @@
 
-
-<h1>Index</h1>
-
-<button {{action "generateArticle"}}>Generate a Random Article</button><br>
+<button class='btn-lg' {{action "generateArticle"}}>Generate a Random Article</button><br>
 
 {{#each model as |article|}}
 {{article-tile article = article}}
