@@ -1,5 +1,18 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<div class="container-fluid navbar">
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+      <li><a href="#">Link</a></li>
+    </ul>
+  </div>
+</div>
+<div class= "container">
+  <header class= "jumbotron">
+    <h1>Hustle</h1>
+  </header>
+    {{outlet}}
+  <hr>
+  <footer>
+    Our representatives would love to help!
+  </footer>
+</div>

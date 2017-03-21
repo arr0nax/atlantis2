@@ -17,6 +17,13 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+      apiKey: "AIzaSyAPVOVKXYiY5BBUZP5XS9CuTh2zTgpP0jM",
+      authDomain: "hustle-cddd8.firebaseapp.com",
+      databaseURL: "https://hustle-cddd8.firebaseio.com",
+      storageBucket: "hustle-cddd8.appspot.com"
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
