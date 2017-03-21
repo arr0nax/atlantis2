@@ -5,5 +5,5 @@
 <button {{action "generateArticle"}}>Generate a Random Article</button><br>
 
 {{#each model as |article|}}
-{{display-article article = article}}
+{{article-tile article = article}}
 {{/each}}

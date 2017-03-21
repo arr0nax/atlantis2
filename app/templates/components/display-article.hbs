@@ -1,8 +1,5 @@
 {{yield}}
 <div class="displayArticle">
-  <h3>{{article.title}}</h3>
-  <h4>{{article.author}}</h4>
-  <div id="{{article.author}}" class="displayBody">
+  <div id="{{article.id}}" class="displayBody">
   </div>
-  <button {{action 'displayBody' article.author article.body}}>Show text</button>
 </div>
