@@ -1,6 +1,5 @@
 
-<button class='btn-lg' {{action "generateArticle"}}>Generate a Random Article</button><br>
-
-{{#each model as |article|}}
-{{article-tile article = article}}
-{{/each}}
+{{generate-article saveNewPost="saveNewPost"}}
+{{#if showRecentArticle}}
+{{article-tile article=newArticle}}
+{{/if}}
